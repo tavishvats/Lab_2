@@ -46,12 +46,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         firstNum = findViewById(R.id.firstNumber);
         secondNum = findViewById(R.id.secondNumber);
         add = findViewById(R.id.addButton);
         subtract = findViewById(R.id.subtractButton);
         multiply = findViewById(R.id.multiplyButton);
         divide = findViewById(R.id.divideButton);
+
         firstNum.addTextChangedListener(input);
         secondNum.addTextChangedListener(input);
     }
